@@ -33,3 +33,5 @@ class IrcBot {
 		this.client.send(mode, channel, rwx, this.botName);
 	}
 }
+
+module.exports = IrcBot
