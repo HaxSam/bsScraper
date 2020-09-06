@@ -6,9 +6,9 @@
 	"scripts": {},
 	"author": "HaxSam",
 	"repository": {
-    "type": "git",
-    "url": "git+https://github.com/HaxSam/"
-  },
+		"type": "git",
+		"url": "git+https://github.com/HaxSam/bsVivoScraper"
+	},
 	"license": "ISC",
 	"dependencies": {
 		"axios": "^0.20.0",
