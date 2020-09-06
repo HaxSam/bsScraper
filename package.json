@@ -1,0 +1,16 @@
+{
+	"name": "bsvivoscraper",
+	"version": "1.0.0",
+	"description": "It scrape the vivo links from Bs.to with a BotNet",
+	"main": "app.js",
+	"scripts": {},
+	"author": "HaxSam",
+	"license": "ISC",
+	"dependencies": {
+		"axios": "^0.20.0",
+		"irc": "^0.5.2",
+		"puppeteer": "^5.2.1",
+		"uuid": "^8.3.0",
+		"ws": "^7.3.1"
+	}
+}
