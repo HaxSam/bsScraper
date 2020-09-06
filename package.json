@@ -5,6 +5,10 @@
 	"main": "app.js",
 	"scripts": {},
 	"author": "HaxSam",
+	"repository": {
+    "type": "git",
+    "url": "git+https://github.com/HaxSam/"
+  },
 	"license": "ISC",
 	"dependencies": {
 		"axios": "^0.20.0",
