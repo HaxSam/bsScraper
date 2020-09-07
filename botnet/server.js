@@ -12,12 +12,13 @@ myProtocols.forEach((prot) => {
 let wss = new Websocket.Server({
 	port: 1337,
 	handleProtocols: (protocols, req) => {
-		if (accProt.indexOf(protocols[0]) != -1) return accProt[accProt.indexOf(protocols[0])];
-		return;
+		if (myProtocols.includes(protocols[0])) return myProtocols[myProtocols.indexOf(protocols[0])];
+		return false;
 	},
 });
 
 wss.on("connection", (ws) => {
+	if (!ws.protocol) return;
 	client = clients.get(ws.protocol);
 	let protocol = `${ws.protocol}${client.size()}`;
 	if (client.has(protocol))
