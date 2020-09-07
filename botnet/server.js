@@ -33,12 +33,12 @@ wss.on("connection", (ws) => {
 		ws.protocol = protocol;
 	}
 
-	client.get(ws.protocol).onMessage((form, to, message) => {
+	client.get(ws.protocol).onMessage((from, to, message) => {
 		ws.send(`${from} => ${to}: ${message}`);
 	});
 
 	ws.on("message", (message) => {
-		client.get(ws.protocol).send(message);
+		client.get(ws.protocol).send(message, "#HaxZium-BotNet");
 	});
 
 	ws.on("close", (code, reason) => {
