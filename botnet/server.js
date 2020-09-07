@@ -20,9 +20,9 @@ let wss = new Websocket.Server({
 wss.on("connection", (ws) => {
 	if (!ws.protocol) return;
 	client = clients.get(ws.protocol);
-	let protocol = `${ws.protocol}${client.size()}`;
+	let protocol = `${ws.protocol}${client.size}`;
 	if (client.has(protocol))
-		for (let i in [...Array(clients.size())]) {
+		for (let i in [...Array(clients.size)]) {
 			if (clients.has(`Bot${i}`)) continue;
 			client.set(`${ws.protocol}${i}`, new IrcBot(`${ws.protocol}${i}`));
 			ws.protocol = `${ws.protocol}${i}`;
