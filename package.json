@@ -5,9 +5,14 @@
 	"main": "app.js",
 	"scripts": {},
 	"author": "HaxSam",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/HaxSam/bsVivoScraper"
+	},
 	"license": "ISC",
 	"dependencies": {
 		"axios": "^0.20.0",
+		"cheerio": "^1.0.0-rc.3",
 		"irc": "^0.5.2",
 		"puppeteer": "^5.2.1",
 		"uuid": "^8.3.0",
